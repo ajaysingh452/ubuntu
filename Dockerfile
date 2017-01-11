@@ -1,5 +1,5 @@
 FROM ubuntu:trusty-20161214
-MAINTAINER ajaysingh452@live.com
+MAINTAINER ajaysingh@ttni.co.in
 
 RUN echo 'APT::Install-Recommends 0;' >> /etc/apt/apt.conf.d/01norecommends \
  && echo 'APT::Install-Suggests 0;' >> /etc/apt/apt.conf.d/01norecommends \
