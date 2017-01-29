@@ -7,8 +7,8 @@ dependencies:
   override:
     - docker info
     - if [[ -e ~/docker-ubuntu/image.tar ]]; then docker load --input ~/docker-ubuntu/image.tar; fi
-    - docker build -t sameersbn/ubuntu .
+    - docker build -t ajaysingh452/ubuntu .
     - mkdir -p ~/docker-ubuntu; docker save --output ~/docker-ubuntu/image.tar sameersbn/ubuntu
 test:
   override:
-    - docker run -it sameersbn/ubuntu echo "Hello World"
+    - docker run -it ajaysingh452/ubuntu echo "Hello World"
